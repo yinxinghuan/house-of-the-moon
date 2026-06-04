@@ -35,6 +35,13 @@ const STRINGS: Record<Locale, Record<string, string>> = {
     'choice.the_toll':        'ask who waits on the far bank',
 
     // ── Endings ────────────────────────────────────────────────────────────
+    // ── Subtitles (UI overlay, NOT baked into video) ───────────────────────
+    'subtitle.ABA': 'May I stay tonight?',
+    'subtitle.ABB': 'It was 1903. You fell off the horse. I was there.',
+    'subtitle.BAB': 'I was twelve when I first saw you.',
+    'subtitle.BBA': 'Beijing. 1843. You gave me a rose at the cathedral gate. I am still waiting for the rest of the sentence.',
+    'subtitle.BBB': 'She waits across the river. The boatman accepts only bodies like yours.',
+
     'ending.AAA.title':   'the kiss',
     'ending.AAA.tagline': 'She walked to you. Her hair fell. The candle gave her your shadow.',
 
@@ -87,6 +94,12 @@ const STRINGS: Record<Locale, Record<string, string>> = {
     'choice.ten_years':       '问她写了多久',
     'choice.release_me':      '问她要放下什么',
     'choice.the_toll':        '问河对岸是谁在等',
+
+    'subtitle.ABA': '今晚我能留下吗?',
+    'subtitle.ABB': '那年是 1903。你从马上掉下来时, 我也在场。',
+    'subtitle.BAB': '我十二岁那年第一次看到你。',
+    'subtitle.BBA': '北京。1843 年。你在大教堂门口给了我一支玫瑰。我一直在等你说完那句没说完的话。',
+    'subtitle.BBB': '她在河对岸等着。摆渡的人只收像你这样的躯壳。',
 
     'ending.AAA.title':   '吻',
     'ending.AAA.tagline': '她走过来。她的头发垂下。烛光把她的影子叠到了你身上。',

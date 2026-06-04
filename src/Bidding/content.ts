@@ -41,7 +41,7 @@ function branch(id: string, a: ChoiceDef, b: ChoiceDef): NodeDef {
   };
 }
 
-function ending(id: string, type: EndingType): NodeDef {
+function ending(id: string, type: EndingType, hasSubtitle = false): NodeDef {
   return {
     id,
     video: `${id}.mp4`,
@@ -51,6 +51,7 @@ function ending(id: string, type: EndingType): NodeDef {
     endingType: type,
     endingTitleKey: `ending.${id}.title`,
     endingTaglineKey: `ending.${id}.tagline`,
+    ...(hasSubtitle && { subtitleKey: `subtitle.${id}` }),
   };
 }
 
@@ -103,10 +104,10 @@ export const NODES: Record<string, NodeDef> = {
   // Layer 3 — endings (8): 3 sensual (kiss / pulse-stay / ten-years) + 5 surreal horror
   AAA: ending('AAA', 'sensual'),
   AAB: ending('AAB', 'horror'),
-  ABA: ending('ABA', 'sensual'),
-  ABB: ending('ABB', 'horror'),
+  ABA: ending('ABA', 'sensual', true),
+  ABB: ending('ABB', 'horror', true),
   BAA: ending('BAA', 'horror'),
-  BAB: ending('BAB', 'sensual'),
-  BBA: ending('BBA', 'horror'),
-  BBB: ending('BBB', 'horror'),
+  BAB: ending('BAB', 'sensual', true),
+  BBA: ending('BBA', 'horror', true),
+  BBB: ending('BBB', 'horror', true),
 };
